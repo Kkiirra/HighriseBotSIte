@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html data-bs-theme="light" lang="en">
+<nav class="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light" id="mainNav" style="background: rgb(255,221,249);">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="{% url 'dashboard' %}"><span><span style="font-weight: normal !important; color: rgb(111, 64, 165);">🤖</span>HighRise Bot</span></a>
+        <div class="collapse navbar-collapse d-xxl-flex" id="navcol-1" style="margin-left: 0px;">
+            <ul class="navbar-nav align-content-start align-self-start order-first ms-auto" style="margin-right: 42px;">
+                <li class="nav-item"><a class="nav-link font-monospace {% if request.path == '/dashboard/' %}active{% endif %}" data-bss-hover-animate="pulse" href="{% url 'dashboard' %}"><span style="font-weight: normal !important;">Главная</span></a></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"><a class="nav-link font-monospace {% if request.path == '/bots/' %}active{% endif %} shadow-sm tada animated" href="{% url 'bots' %}" style="border-radius: 0.1px;border: 0.1px none rgba(0,0,0,0.19);"><span style="font-weight: normal !important;">Боты</span></a></li>
+                <li class="nav-item dropdown"><a class="{% if user.is_authenticated %} dropdown-toggle {% else %} dropdown {% endif %} nav-link font-monospace" aria-expanded="false" data-bs-toggle="dropdown" href="#">Профиль</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Настройки</a><a class="dropdown-item" href="#">Мои Боты</a></div>
+                </li>
+            </ul>
+            {% if user.is_authenticated %}
+                <a class="font-monospace" href="#">Кошелёк 0.00</a>
+            {% else %}
+                <a class="btn btn-primary shadow" role="button" data-bss-hover-animate="pulse" href="{% url 'signin' %}" style="background: rgba(255,0,210,0.36);border-width: 0.8px;border-style: none;">Вход</a>
+
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/untitled.css' %}">
+</head>
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bs-init.js' %}"></script>
+<script src="{% static 'js/startup-modern.js' %}"></script>
+
+</html>

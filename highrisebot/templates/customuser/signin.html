@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+    <section class="py-4 py-md-5" style="padding-top: 0px;">
+        <div class="container py-md-5" style="width: 740px;margin-top: 0px;">
+            <div class="row">
+                <div class="col-md-6 text-center"><img class="img-fluid w-100" src="{% static 'img/acfa0bb04a490eedeecc449204aff959.jpg' %}"></div>
+                <div class="col-md-5 col-xl-4 col-xxl-5 text-center text-md-start align-self-center">
+                    <h2 class="display-6 fw-bold bounce animated mb-5">Вход</h2>
+                    <form method="post" data-bs-theme="light">
+                        <div class="mb-3"><input class="shadow form-control" type="email" data-bss-hover-animate="pulse" name="email" placeholder="Почта"></div>
+                        <div class="mb-3"><input class="shadow form-control" type="password" data-bss-hover-animate="pulse" name="password" placeholder="Пароль"></div>
+                        <div class="mb-5"><a class="btn btn-primary shadow" role="button" data-bss-hover-animate="pulse" href="signup.html" style="background: rgba(255,0,210,0.36);border-width: 0.8px;border-style: none;">Отправить</a></div>
+                        <div><a class="shadow-sm" href="{% url 'signup' %}"><strong>Создать аккаунт&nbsp;</strong></a></div>
+                    </form>
+                    <p class="text-muted"><a href="forgotten-password.html">Забыли пароль?</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock %}

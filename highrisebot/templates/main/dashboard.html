@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <header class="pt-5">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5" style="padding-bottom: 0px;">
+                <div class="col-md-8 text-center text-md-start mx-auto" style="margin-bottom: 70px;">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-5">Добро пожаловать в мир ботов Highrise<span style="font-weight: normal !important; color: rgb(13, 13, 13);">🎮</span></h1>
+                    </div>
+                    <p class="fs-4 fw-semibold text-muted mb-5" style="padding-top: 0px;margin-top: 0px;">На нашей платформе вы можете приобрести готовых ботов Highrise для вашей комнаты. Мы предоставляем полный спектр услуг: от разработки до развёртывания на сервере. Наша команда готова сделать бота под ваши нужны Чтобы ознакомиться с нашим ботами перейдите во вкладку Боты</p>
+                </div>
+                <div class="col"><img class="img-fluid" src="{% static 'img/51d8c9ecec5321cbaba408fb737291c0.jpg' %}" style="width: 214px;margin-left: 48px;margin-top: 42px;" width="214" height="380"></div>
+                <div class="col-12 col-lg-10 mx-auto">
+                    <div class="text-center position-relative"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="bg-primary border rounded border-0 border-primary overflow-hidden"></div>
+        </div>
+    </section>
+    <section class="py-4 py-xl-5 mb-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-8 col-xl-6 text-center mx-auto" style="margin-bottom: -23px;">
+                    <h2 class="display-6 fw-bold mb-5">FAQ</h2>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-8 mx-auto">
+                    <div class="accordion text-muted" role="tablist" id="accordion-1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Как долго занимает разработка и настройка бота?</button></h2>
+                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p>Разработка и настройка бота занимает от нескольких дней до недели, в зависимости от вашего проекта. Мы стараемся работать оперативно и качественно, чтобы вы получили вашего бота, который полностью соответствует вашим требованиям..</p>
+                                    <p class="mb-0">Также предлагаем ознакомиться уже с готовыми ботами, которые могут быть в вашей комнате уже в день покупки!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Есть ли гарантия качества на работоспособность бота?</button></h2>
+                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Да, у нас есть гарантия качества и работоспособности бота. В случае возникновения проблем или недочётов наша команда оперативно исправит и решит любые проблемы связанные с ботом.&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="true" aria-controls="accordion-1 .item-3">Можно интегрировать бота с другими инструментами или сервисами?</button></h2>
+                            <div class="accordion-collapse collapse show item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Да, мы можем интегрировать вашего бота с различными внешними сервисами и API, включая погоду, новости и многое другое. Мы готовы настроить бота так, чтобы он лучше всего соответствовал вашим потребностям и обеспечил вас всей необходимой информацией и функционалом.&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 py-xl-5"></section>
+    <footer></footer>
+</body>
+{% endblock %}
